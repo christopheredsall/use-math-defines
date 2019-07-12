@@ -12,6 +12,6 @@ pool:
 steps:
 - script: |
      cmake -B build .
-     dir build
-     make -C build
+     cd build
+     msbuild ALL_BUILD.vcxproj
   displayName: 'cmake' 
