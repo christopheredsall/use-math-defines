@@ -10,6 +10,8 @@ pool:
   vmImage: 'vs2017-win2016'
 
 steps:
+- script: make works
+  displayName: 'make works'
 - script: make fails
   displayName: 'make fails'
 
