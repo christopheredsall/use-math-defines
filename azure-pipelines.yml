@@ -10,8 +10,7 @@ pool:
   vmImage: 'vs2017-win2016'
 
 steps:
-- script: cmake -B build .
+- script: |
+     cmake -B build .
+     make -C build
   displayName: 'cmake' 
-- script: make fails
-  displayName: 'make -C build'
-
