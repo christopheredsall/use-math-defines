@@ -13,5 +13,5 @@ steps:
 - script: cmake -B build .
   displayName: 'cmake' 
 - script: make fails
-  displayName: 'cd build; make -C build'
+  displayName: 'make -C build'
 
