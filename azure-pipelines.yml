@@ -10,8 +10,8 @@ pool:
   vmImage: 'vs2017-win2016'
 
 steps:
-- script: make works
-  displayName: 'make works'
+- script: cmake
+  displayName: 'cmake -B build -A "Visual Studio 15 2017 Win64"'
 - script: make fails
-  displayName: 'make fails'
+  displayName: 'cd build; make -C build'
 
